@@ -10,10 +10,6 @@ module.exports = {
   transpilePackages: [],
   env: {
     NEXT_PUBLIC_API_BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL
-  },
-  sentry: {
-    hideSourceMaps: true,
-    transpileClientSDK: true,
   }
 }
 
