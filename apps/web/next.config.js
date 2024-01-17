@@ -12,7 +12,8 @@ module.exports = {
     NEXT_PUBLIC_API_BASE_URL: process.env.NEXT_PUBLIC_API_BASE_URL
   },
   sentry: {
-    hideSourceMaps: true
+    hideSourceMaps: true,
+    transpileClientSDK: true,
   }
 }
 
