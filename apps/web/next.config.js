@@ -17,7 +17,5 @@ module.exports = {
 }
 
 module.exports = withSentryConfig(
-  removeImports(module.exports),
-  { silent: false },
-  { hideSourcemaps: true }
+  removeImports(module.exports)
 )
