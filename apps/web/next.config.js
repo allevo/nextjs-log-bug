@@ -2,6 +2,7 @@
 // with Sentry.
 // https://nextjs.org/docs/api-reference/next.config.js/introduction
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
+const { withSentryConfig } = require('@sentry/nextjs')
 const removeImports = require('next-remove-imports')()
 
 module.exports = {
@@ -15,4 +16,8 @@ module.exports = {
   }
 }
 
-module.exports = removeImports(module.exports)
+module.exports = withSentryConfig(
+  removeImports(module.exports),
+  { silent: true },
+  { hideSourcemaps: true }
+)
