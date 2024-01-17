@@ -1,0 +1,22 @@
+{
+  "name": "oramasearch-app",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run --log-prefix=none dev"
+  },
+  "devDependencies": {
+    "prettier": "latest",
+    "turbo": "^1.8.5"
+  },
+  "engines": {
+    "node": ">=18",
+    "yarn": "Please use pnpm instead of Yarn to install dependencies",
+    "pnpm": ">=8.6.0"
+  },
+  "packageManager": "pnpm@8.0.0"
+}
